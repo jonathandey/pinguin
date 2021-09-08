@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef10a4c0449e9626088b41642c3131f9",
+    "content-hash": "6398783eb1e9a5117a8244b95aa12f9c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1915,11 +1915,17 @@
         },
         {
             "name": "openwse/ipfs-api",
-            "version": "dev-main",
+            "version": "v0.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openwse/ipfs-api.git",
+                "reference": "94afbd504bb3fe149dd56fdb8d7f5d813571167a"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/jon/Projects/ipfs-api",
-                "reference": "6b6965f4e611389dd3620174f4688aa7d04721e0"
+                "type": "zip",
+                "url": "https://api.github.com/repos/openwse/ipfs-api/zipball/94afbd504bb3fe149dd56fdb8d7f5d813571167a",
+                "reference": "94afbd504bb3fe149dd56fdb8d7f5d813571167a",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -1940,21 +1946,7 @@
                     "Ipfs\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Ipfs\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "tests": [
-                    "@php ./vendor/bin/phpunit --verbose"
-                ],
-                "lint": [
-                    "@php ./vendor/bin/php-cs-fixer fix --dry-run",
-                    "@php ./vendor/bin/phpmd src ansi phpmd.ruleset.xml",
-                    "@php ./vendor/bin/phpstan analyse --ansi"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1972,9 +1964,11 @@
                 "ipfs",
                 "ipfs-api"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/openwse/ipfs-api/issues",
+                "source": "https://github.com/openwse/ipfs-api/tree/v0.1.5"
+            },
+            "time": "2021-09-08T10:15:55+00:00"
         },
         {
             "name": "opis/closure",
@@ -8113,9 +8107,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "openwse/ipfs-api": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

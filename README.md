@@ -1,4 +1,4 @@
-# PHP IPFS Pinning Service (Codename: Pinguin)
+# A self-hosted PHP IPFS Pinning Service (Codename: Pinguin)
 
 This project is still under active development.
 
@@ -15,11 +15,11 @@ IPFS_SERVER=http://127.0.0.1
 IPFS_PORT=45001
 ```
 
-You should then add this service to your local IPFS instance either by using the UI or CLI.
+You should then add this service to your local IPFS instance, either by using the UI or CLI.
 
 `ipfs pin remote service add pinguin http://your_local_address ANY_KEY_HERE`
 
-At the moment keys aren't implemented. Laravel packages Sanctum, which would be a perfect fit for this.
+Keys aren't implemented, yet. Laravel packages Sanctum, which would be a perfect fit for this.
 
 It's a good idea to increase your webservers request timeout, to better handle the client pinning request.
 
